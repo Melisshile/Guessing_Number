@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/06/13 20:46:52.000.238,=C:\Users\hilai\OneDrive\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2023/06/13 20:47:17.000.308,=C:\Users\hilai\OneDrive\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2024/07/05 12:35:09.000.494,=C:\Users\hilai\OneDrive\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2024/07/05 12:35:11.000.222,=C:\Users\hilai\OneDrive\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2024/07/05 12:44:36.000.037,C:\Users\hilai\OneDrive\Documents\Embarcadero\Studio\Projects\Unit2.h=D:\workSpace\project\Internships\CodSoft\task_01\Main_unit.h</Transaction>
+    <Transaction>2024/07/05 12:44:36.000.037,C:\Users\hilai\OneDrive\Documents\Embarcadero\Studio\Projects\Unit2.cpp=D:\workSpace\project\Internships\CodSoft\task_01\Main_unit.cpp</Transaction>
+    <Transaction>2024/07/05 12:44:36.000.037,C:\Users\hilai\OneDrive\Documents\Embarcadero\Studio\Projects\Unit2.dfm=D:\workSpace\project\Internships\CodSoft\task_01\Main_unit.dfm</Transaction>
+    <Transaction>2024/07/05 12:45:09.000.383,C:\Users\hilai\OneDrive\Documents\Embarcadero\Studio\Projects\Project2PCH1.h=D:\workSpace\project\Internships\CodSoft\task_01\Number_Guessing_GamePCH1.h</Transaction>
+    <Transaction>2024/07/05 12:45:09.000.438,C:\Users\hilai\OneDrive\Documents\Embarcadero\Studio\Projects\Project2.cbproj=D:\workSpace\project\Internships\CodSoft\task_01\Number_Guessing_Game.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

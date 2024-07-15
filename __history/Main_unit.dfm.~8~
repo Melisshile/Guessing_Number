@@ -1,0 +1,89 @@
+object Main_Form: TMain_Form
+  Left = 0
+  Top = 0
+  Caption = 'Number Guessing Game'
+  ClientHeight = 441
+  ClientWidth = 624
+  Color = clNavy
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -19
+  Font.Name = 'Ravie'
+  Font.Style = [fsBold]
+  Icon.Data = {
+    0000010001001010100001000400280100001600000028000000100000002000
+    0000010004000000000080000000000000000000000010000000000000000000
+    0000FF8400000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000110000101000010011000010100001001100001010000100110
+    0011011001100110011001100110011111000110011001100111011111100110
+    0001011001100110000101100110011000010110011001100001011001100110
+    001101000010001001100100001000111100010000100000000000000000FFFF
+    00009EBD00009EBD00009EBD00009C9900009999000083990000988100009E99
+    00009E9900009E9900009E9900009CBD0000D9BD0000C3BD0000FFFF0000}
+  OnShow = FormShow
+  TextHeight = 26
+  object input_lbl: TLabel
+    Left = 48
+    Top = 152
+    Width = 233
+    Height = 26
+    Caption = 'Input your Guess'
+  end
+  object title_panel: TPanel
+    Left = 48
+    Top = 16
+    Width = 529
+    Height = 57
+    Caption = 'Number Guessing Game'
+    TabOrder = 0
+  end
+  object Run_btn: TButton
+    Left = 296
+    Top = 208
+    Width = 89
+    Height = 41
+    Caption = 'Ok'
+    TabOrder = 1
+    OnClick = Run_btnClick
+  end
+  object guess_edit: TEdit
+    Left = 296
+    Top = 149
+    Width = 121
+    Height = 34
+    TabOrder = 2
+  end
+  object dis_guess_panel: TPanel
+    Left = 431
+    Top = 145
+    Width = 146
+    Height = 104
+    Caption = 'Guess'
+    TabOrder = 3
+    object dis_guess_lbl: TLabel
+      Left = 56
+      Top = 64
+      Width = 27
+      Height = 26
+      Caption = '...'
+    end
+  end
+  object results_panel: TPanel
+    Left = 48
+    Top = 312
+    Width = 529
+    Height = 97
+    Caption = 'Results...'
+    TabOrder = 4
+  end
+  object reset_btn: TButton
+    Left = 296
+    Top = 255
+    Width = 89
+    Height = 34
+    Caption = 'Reset'
+    TabOrder = 5
+    OnClick = reset_btnClick
+  end
+end

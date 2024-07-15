@@ -1,0 +1,86 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Main_unit.h"
+//---------------------------------------------------------------------------
+//importing libraries for generating random numbres
+#include <ctime>
+#include <cstdlib>
+//---------------------------------------------------------------------------
+//global variables
+static int x=0;
+int guess,randVar;
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TMain_Form *Main_Form;
+//---------------------------------------------------------------------------
+__fastcall TMain_Form::TMain_Form(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void TMain_Form::randomNumber()
+{
+    //calculating the random number
+	srand(time(NULL));
+	x = rand() % 10 + 1; //ranging from 1 to 5
+}
+//---------------------------------------------------------------------------
+void TMain_Form::decision()
+{
+	guess = StrToInt(guess_edit->Text);
+	//decision part
+	if(guess==randVar)
+	{
+		ShowMessage("Congratulations!!! \nYou got it!");
+		results_panel->Caption = "Congratulations!!! You got it!";
+		//displaying the guess
+		dis_guess_lbl->Caption = IntToStr(randVar);
+	}else if(guess>randVar && guess<randVar+2)
+	{
+		ShowMessage("You're almost there!!! \nKeep on trying!");
+	}else if(guess>randVar+2)
+	{
+		ShowMessage("Your guess is too high!!! \nKeep on trying!");
+	}else if(guess<randVar && guess>=randVar-2)
+	{
+		ShowMessage("You're almost there!!! \nKeep on trying!");
+	}else if(guess<randVar-2)
+	{
+		ShowMessage("Your guess is too low!!! \nKeep on trying!");
+	}else
+	{
+		ShowMessage("Invalid Input!!!");
+	}
+    guess_edit->SetFocus();
+}
+//---------------------------------------------------------------------------
+void __fastcall TMain_Form::Run_btnClick(TObject *Sender)
+{
+	randVar = x;
+	//calling decision function
+	decision();
+}
+//---------------------------------------------------------------------------
+void __fastcall TMain_Form::FormShow(TObject *Sender)
+{
+	guess_edit->SetFocus();
+	randomNumber();
+	//ShowMessage("Value of X :" + IntToStr(x));
+}
+//---------------------------------------------------------------------------
+void __fastcall TMain_Form::reset_btnClick(TObject *Sender)
+{
+	guess_edit->Text = "";
+	dis_guess_lbl->Caption = "...";
+	results_panel->Caption = "New Results...";
+	//ShowMessage("Value of X :" + IntToStr(x));
+	randomNumber();
+	guess_edit->SetFocus();
+	//ShowMessage("Now, the Value of X :" + IntToStr(x));
+
+}
+//---------------------------------------------------------------------------
